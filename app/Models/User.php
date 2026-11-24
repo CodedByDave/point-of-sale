@@ -18,9 +18,11 @@ class User extends Authenticatable
      * @var list<string>
      */
     protected $fillable = [
+        'role_id',
         'name',
         'email',
         'password',
+        'status'
     ];
 
     /**
@@ -32,6 +34,12 @@ class User extends Authenticatable
         'password',
         'remember_token',
     ];
+
+    // Define the relationship with the Role model
+    public function role()
+    {
+        return $this->belongsTo(Role::class);
+    }
 
     /**
      * Get the attributes that should be cast.

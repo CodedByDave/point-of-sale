@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b9e3668009b4953a43ca97cef012d514",
+    "content-hash": "8d0ad3856e6f406dd8537ce5e1759f94",
     "packages": [
         {
             "name": "brick/math",
@@ -6781,6 +6781,54 @@
                 "source": "https://github.com/Jean85/pretty-package-versions/tree/2.1.1"
             },
             "time": "2025-03-19T14:43:43+00:00"
+        },
+        {
+            "name": "laravel-architect/architect",
+            "version": "v0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/CodedByDave/laravel-architect.git",
+                "reference": "4efa0f225b8609989522b105996eb9b6d151f54e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/CodedByDave/laravel-architect/zipball/4efa0f225b8609989522b105996eb9b6d151f54e",
+                "reference": "4efa0f225b8609989522b105996eb9b6d151f54e",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^11.0|^12.0",
+                "illuminate/support": "^11.0|^12.0",
+                "nikic/php-parser": "^5.0",
+                "php": "^8.2"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^9.0|^10.0",
+                "pestphp/pest": "^3.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaravelArchitect\\Architect\\ArchitectServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelArchitect\\Architect\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Organize Laravel codebases into clean, configurable architectural layers",
+            "support": {
+                "issues": "https://github.com/CodedByDave/laravel-architect/issues",
+                "source": "https://github.com/CodedByDave/laravel-architect/tree/v0.2.0"
+            },
+            "time": "2026-11-20T17:56:41+00:00"
         },
         {
             "name": "laravel/boost",
